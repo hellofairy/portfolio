@@ -133,7 +133,7 @@ p {
   transition: all var(--animation-duration) ease-in;
 }
 
-.navbar__toogle-btn {
+.navbar__toggle-btn {
   position: absolute;
   right: 32px;
   font-size: 24px;
@@ -398,7 +398,7 @@ p {
 }
 
 .project__description h3 {
-  color: var(--color-white);
+  color: var(--color-pink);
 }
 
 .project__description h3:after {
@@ -406,9 +406,9 @@ p {
   display: block;
   position: relative;
   left: 50%;
-  width: 25px;
+  width: 50px;
   height: 2px;
-  margin-left: -12px;
+  transform: translateX(-50%);
   margin-top: 8px;
   background-color: var(--color-dark-white);
 }
@@ -505,13 +505,14 @@ p {
 
 /* For below 768px screen width */
 @media screen and (max-width: 768px) {
-  .navbar__toogle-btn {
+  .navbar__toggle-btn {
     display: block;
   }
 
   #navbar {
     flex-direction: column;
     align-items: flex-start;
+    background-color: var(--color-green);
   }
 
   .navbar__menu {
