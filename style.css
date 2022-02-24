@@ -16,7 +16,7 @@
 
   /* Font size */
   --font-large: 48px;
-  --font-medium: 28px;
+  --font-medium: 25px;
   --font-regular: 18px;
   --font-small: 16px;
   --font-micro: 14px;
@@ -172,7 +172,7 @@ p {
 }
 
 .home__contact:hover {
-  background-color: var(--color-green);
+  background-color: var(--color-pink);
   transition: all var(--animation-duration) ease-in;
 }
 
@@ -181,6 +181,7 @@ p {
   text-align: center;
   padding: 50px;
   margin: auto;
+  margin-top: 40px;
 }
 
 .section__container {
@@ -208,17 +209,22 @@ p {
 }
 
 .major__icon i {
-  transition: all var(--animation-duration) ease;
+  transition: all 600ms ease;
 }
 
 .major__icon:hover i {
   color: var(--color-pink);
-  transform: rotate(-30deg) scale(1.1);
+  transform: rotate(1turn) scale(1.2);
+  transition: all 1s ease-in-out;
 }
 
 .major__title,
 .major__description {
   color: var(--color-dark-grey);
+}
+
+.major__title {
+  font-size: var(--font-medium);
 }
 
 .major__description {
@@ -264,7 +270,7 @@ p {
   display: flex;
   background-color: var(--color-light-grey);
   color: var(--color-light-white);
-  margin: 20px 0;
+  margin: 40px 0;
 }
 
 .skillset__title {
@@ -278,7 +284,7 @@ p {
 }
 
 .skill {
-  margin-bottom: 32px;
+  margin-bottom: 20px;
 }
 
 .skill_description {
